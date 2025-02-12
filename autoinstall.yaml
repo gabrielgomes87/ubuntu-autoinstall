@@ -2,10 +2,10 @@
 autoinstall:
     version: 1
     identity:
-        realname: 'Dionatan Simioni'
+        realname: 'dti info'
         hostname: ubuntu-desktop
-        username: diolinux
-        password: '$y$j9T$uhkxlm8nUQaNu.6rl4k2d.$DIldpYy96OHg8lFjfXfc671BZcGWkPOmaDONGAhGSg3'
+        username: dti
+        password: '$y$j9T$k6ko5qrkXY16/FCjWVlFj/$VvySm7ERP9VR36Nxc.a5GBLDXIwj5gqPPvL0XNjI/b4'
     locale: pt_BR.utf8
     keyboard:
         layout: br
@@ -15,14 +15,33 @@ autoinstall:
         - gimp
         - git
         - wget
+        - docker.io
+        - docker-compose
+        - virtualbox
+        - mysql-server
+        - openjdk-11-jdk
+        - python3-pip
+        - nodejs
+        - npm
     snaps:
         - name: spotify
           channel: stable
           classic: false
+        - name: intellij-idea-community
+          channel: stable
+          classic: true
+        - name: postman
+          channel: stable
+          classic: false
+        - name: code
+          channel: stable
+          classic: true
+        - name: gh  
+          channel: stable
+          classic: true
     codecs:
         install: true
     drivers:
         install: true
     updates: all
     shutdown: reboot
-
